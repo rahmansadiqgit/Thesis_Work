@@ -1,0 +1,22 @@
+3️⃣ Managing Notebooks Effectively
+
+Always start with data loading & preprocessing in separate scripts (scripts/preprocessing.py)
+→ Notebooks just call these scripts/functions:
+
+from scripts.preprocessing import clean_data
+
+df = clean_data(data/raw/my_dataset.csv)
+
+
+Use versioned notebooks:
+Name them with numbers 01_, 02_, … so the workflow is clear.
+
+Keep outputs reproducible:
+
+Avoid saving large outputs in notebooks; save results to data/processed or models/.
+
+Document steps:
+
+Markdown cells for purpose, methods, and observations.
+
+Code cells should be clean and modular (call scripts/functions, don’t copy-paste everything).

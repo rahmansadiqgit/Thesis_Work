@@ -1,0 +1,79 @@
+1️⃣ Data Cleaning / Preprocessing Notebooks
+
+Purpose: Load raw data, clean it, and create processed datasets.
+
+Key points:
+
+Use functions from scripts/preprocessing.py instead of writing all code in notebook.
+
+Save cleaned/processed datasets to data/processed/.
+
+Keep Markdown explanations for what cleaning steps were done.
+
+Example filename: 01_data_cleaning.ipynb
+
+2️⃣ Exploratory Data Analysis (EDA) Notebooks
+
+Purpose: Understand data distributions, patterns, correlations, missing values, and generate visualizations.
+
+Key points:
+
+Read processed data from data/processed/.
+
+Focus on charts, plots, and insights rather than data cleaning.
+
+Markdown cells explain observations and insights.
+
+Example filename: 02_exploratory_analysis.ipynb
+
+3️⃣ Model Training / Experiments Notebooks
+
+Purpose: Build, train, and evaluate machine learning or deep learning models.
+
+Key points:
+
+Use processed data, never raw data.
+
+Save trained models to models/ folder.
+
+Document experiment settings, hyperparameters, and evaluation metrics in Markdown.
+
+Example filename: 03_model_training.ipynb
+
+4️⃣ Visualization / Reporting Notebooks
+
+Purpose: Summarize results and communicate findings.
+
+Key points:
+
+Pull results from processed data or trained models.
+
+Generate plots, tables, and reports.
+
+Can be used for sharing insights with non-technical stakeholders.
+
+Example filename: 04_results_visualization.ipynb
+
+5️⃣ Utility / Quick Experiments Notebooks
+
+Purpose: Try out small snippets, test new libraries, or debug code.
+
+Key points:
+
+Usually temporary and not part of main workflow.
+
+Can later be converted into scripts if the code becomes reusable.
+
+General Notebook Management Tips
+
+One notebook per logical task or experiment.
+
+Avoid storing large data or models inside notebooks.
+
+Always document steps and insights in Markdown.
+
+Use version control:
+
+Commit .ipynb files.
+
+Use nbdime to better diff notebook changes Intruductions.txt

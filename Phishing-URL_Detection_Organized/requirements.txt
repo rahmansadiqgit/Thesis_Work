@@ -1,0 +1,14 @@
+f) requirements.txt
+
+Store all Python packages your project depends on:
+
+numpy
+pandas
+scikit-learn
+torch
+matplotlib
+
+
+Install via:
+
+pip istall -r requirements.txt
