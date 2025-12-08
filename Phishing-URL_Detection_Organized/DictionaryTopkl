@@ -1,0 +1,11 @@
+import pickle
+
+# Example object: a dictionary
+data = {"name": "Sadiq", "score": 95}
+
+# Saving to a file
+with open("data.pkl", "wb") as f:  # 'wb' = write binary
+    pickle.dump(data, f)
+
+print("Data saved successfully!")
+
